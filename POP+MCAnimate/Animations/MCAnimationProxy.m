@@ -66,6 +66,13 @@ static char kAnimationDelegateKey;
 	static NSMutableDictionary *__propertiesByClassName = nil;
 	if (!__propertiesByClassName) {
 		NSDictionary *mapping = @{
+            @"ASDisplayNode": @{
+                @"alpha": kPOPViewAlpha,
+                @"backgroundColor": kPOPViewBackgroundColor,
+                @"bounds": kPOPViewBounds,
+                @"frame": kPOPViewFrame,
+            },
+          
 			@"CALayer": @{
 				@"backgroundColor": kPOPLayerBackgroundColor,
 				@"bounds": kPOPLayerBounds,
